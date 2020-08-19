@@ -49,7 +49,7 @@ Option | Description
 **secureConvioPath**: null | Settings to provide connectivity to your Teamraiser instance.
 **apiKey**: null | Settings to provide connectivity to your Teamraiser instance.
 **fr_ids**: [] | An array of Teamraiser Ids.
-**maxCount**: 10 | The number of top participants to display.
+**maxCount**: 10 | The number of top teams to display.
 **loadingImage**: null | The optional path to an image to display while the results are being compiled.
 **loadingImageAlt**: null | The optional alt text for the image to display while the results are being compiled.
 **loadingText**: null | The optional text to display while the results are being compiled.
