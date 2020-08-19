@@ -20,8 +20,8 @@ This plugin for Blackbaud Luminate provides a Top Participants widget across mul
 		%%total%%
 	</div>
 </script>                                                                                                                   
-```
-```javascript
+
+<!--// Init Top Teams //-->
 <script>                                                                                                                       
  jQuery(document).ready(function ($) {                                                                                         
    var options =                                                                                                               
