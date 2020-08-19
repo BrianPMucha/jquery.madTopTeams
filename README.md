@@ -17,7 +17,7 @@ This plugin for Blackbaud Luminate provides a Top Teams widget across multiple T
 		<strong>%%name%%</strong>
 	</div>
 	<div class="col-12 col-lg-4 text-right">
-		%%total%%
+		<em>%%total%%</em>
 	</div>
 </script>                                                                                                                   
 
