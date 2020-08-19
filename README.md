@@ -34,7 +34,7 @@ This plugin for Blackbaud Luminate provides a Top Participants widget across mul
      "maxCount": 10,                                                                                                
      "loadingImage": "../images/loader.gif",                                                                                   
      "loadingImageAlt": "&#x1F551",                                                                                            
-     "results_template_id": "participant_results_template"                                                                               
+     "results_template_id": "results_template_top_teams"                                                                               
    }                                                                                                                           
   $("#top_teams_results").madTopTeams( options );                                                                            
  });                                                                                                                           
