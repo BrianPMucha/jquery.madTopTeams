@@ -10,6 +10,45 @@
 *
 \**********************************************************************/
 
+/**********************************************************************\
+*
+* <div class="section">
+*   <div class="container">
+*     <h2>Top Teams</h2>
+*     <div id="top_teams_results" class="row list-results"></div>
+*   </div>
+* </div>
+* 
+* <!--// Results Template //-->
+* <script id="results_template_top_teams" type="text/template">
+*   <div class="col-12 col-lg-8">
+*     <strong>%%name%%</strong>
+*   </div>
+*   <div class="col-12 col-lg-4 text-right">
+*     <em>%%total%%</em>
+*   </div>
+* </script>
+* 
+* <!--// Init Top Teams //-->
+* <script>
+*  jQuery(document).ready(function ($) {
+*    var options =
+*    {
+*      "proxyURL":"AjaxProxy?auth=[[S86:true]]&cnv_url=",
+*      "nonsecureConvioPath":"http://[[S29:DOMAIN]][[S29:PATH]]",
+*      "secureConvioPath":"https://[[S29:SECURE_DOMAIN]][[S29:SECURE_PATH]]",
+*      "apiKey":"[[S0:CONVIO_API_KEY]]",
+*      "fr_ids":["1234", "5678"],
+*      "maxCount": "10",
+*      "loadingImage": "../images/loader.gif",
+*      "loadingImageAlt": "&#x1F551",
+*      "results_template_id": "results_template_top_teams"
+*    }
+*   $("#top_teams_results").madTopTeams( options );
+*  });
+* </script>
+*
+\**********************************************************************/
 (function ($) {
 
 	"use strict";
@@ -102,7 +141,7 @@
 
 					element.append(newEntry);
 
-					if(idx == settings.maxCount) { return false; }
+					if(idx+1 == settings.maxCount) { return false; }
 
 				});
 			} else {
