@@ -31,7 +31,7 @@ This plugin for Blackbaud Luminate provides a Top Teams widget across multiple T
      "secureConvioPath":"https://[[S29:SECURE_DOMAIN]][[S29:SECURE_PATH]]",                                                    
      "apiKey":"[[S0:CONVIO_API_KEY]]",                                                                                         
      "fr_ids":["1234", "5678"],
-     "maxCount": 10,                                                                                                
+     "maxCount": "10",                                                                                                
      "loadingImage": "../images/loader.gif",                                                                                   
      "loadingImageAlt": "&#x1F551",                                                                                            
      "results_template_id": "results_template_top_teams"                                                                               
