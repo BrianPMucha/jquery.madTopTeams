@@ -1,6 +1,6 @@
 # jQuery.madTopTeams
 
-This plugin for Blackbaud Luminate provides a Top Teams widget across multiple Teamraisers.
+This plugin for Blackbaud Luminate provides a customizable Top Teams list drawning from multiple Teamraisers.
 
 ### Configuration Examples
 ```html
