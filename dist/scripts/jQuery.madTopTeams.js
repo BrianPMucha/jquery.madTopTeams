@@ -1,9 +1,10 @@
+
 /**********************************************************************\
 *
 *	jQuery.madTopTeams
 *	----------------------
-*	version: 2.0.2
-*	date: 2020/08/17
+*	version: 2.0.3
+*	date: 2020/08/19
 *	license: GPL-3.0-or-later
 *	copyright (C) 2020 Brian Patrick Mucha
 *
@@ -16,7 +17,7 @@
 	/* ********** Private Functions ********** */
 
 	function markLoading(element, settings) {
-		$(".search_item").remove();
+		$(element).empty();
 		if (settings.loadingImage && settings.loadingText) {
 			element.append("<div class=\"list_loading\"><img alt=\"" + settings.loadingImageAlt + "\" src=\"" + settings.loadingImage + "\" />" + settings.loadingText + "</div>");
 		} else if (settings.loadingImage) {
@@ -73,7 +74,7 @@
 	function updateDomElement(data, element, settings) {
 		if( data.errorResponse )
 		{
-			element.html("<div class=\"search_loading\">(" + data.errorResponse.message + ")</div>");
+			element.html("<div class=\"list_message\">(" + data.errorResponse.message + ")</div>");
 		} else {
 			$(element).empty();
 			var trObject = ensureArray(data);
@@ -105,7 +106,7 @@
 
 				});
 			} else {
-				element.html("<div class=\"search_loading\">(end of list)</div>");
+				element.html("<div class=\"list_message\">(end of list)</div>");
 			}
 			if (settings.callBack) { settings.callBack(); }
 		}
