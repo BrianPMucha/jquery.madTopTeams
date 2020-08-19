@@ -1,6 +1,6 @@
-# jQuery.madTopParticipants
+# jQuery.madTopTeams
 
-This plugin for Blackbaud Luminate provides a Top Participants widget across multiple Teamraisers.
+This plugin for Blackbaud Luminate provides a Top Teams widget across multiple Teamraisers.
 
 ### Configuration Examples
 ```html
